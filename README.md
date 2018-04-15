@@ -1,0 +1,2 @@
+# CustomFTPClient
+This program is a specialised FTP synchronisation program. It's intended use is to download files from a specified FTP server location whenever new files are found at the remote location (whilst not re-downloading a file if it has been moved/deleted from the local location and still at remote location). More specifically, this has been designed to download files from a seedbox for SickRage to process.
