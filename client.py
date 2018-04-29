@@ -66,9 +66,7 @@ class Settings:  # used to interact with settings for CustomFTPClient
                 print("\nPlease enter a valid response!\n")
         if delete is not None:
             self.delete_ftp_server(delete, silent=True)
-        host = "185.45.195.182"
-        username = "psb19578"
-        password = "6cn93qA7rU"
+            
         connection, cursor = DBInteraction().db_opener("settings.db")
         try:
             cursor.execute("INSERT INTO ftp_settings VALUES(?, ?, ?, ?)", (name, host, username, password))
